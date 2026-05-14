@@ -1,28 +1,28 @@
 #pragma once
 
-#include <iostream>
 #include <string>
 
-typedef enum e_token {
-	ADD,
-	SUB,
-	MULT,
-	DIV,
-	EXP,
-	NUM,
-	CONST
-} t_token;
+enum TokenType {
+	TOK_NUMBER,
+	TOK_PLUS,
+	TOK_MINUS,
+	TOK_STAR,
+	TOK_CARET,
+	TOK_EQUAL,
+	TOK_VARIABLE,
+	TOK_END
+};
+
+struct Token {
+	TokenType type;
+	std::string text;
+	double number;
+};
 
 class token {
 	protected:
-		t_token *type;
-		std::string *val;
 		std::string all;
 	public:
-		std::string *get_val() const {return (val);}
 		std::string get_all() const {return (all);}
-		t_token *get_token() const {return (type);}
-		void set_val(std::string tmp, int i) {val[i] = tmp;}
 		void set_all(std::string tmp) {all = tmp;}
-		void set_token(t_token tmp, int i) {type[i] = tmp;}
 };
