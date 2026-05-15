@@ -1,7 +1,9 @@
 #include "LinearSolver.hpp"
 
-void LinearSolver::solve(double b, double c) {
-	if (absDouble(b) < epsilon()) {
+void LinearSolver::solve(double b, double c)
+{
+	if (absDouble(b) < epsilon())
+	{
 		std::cout << "No solution." << std::endl;
 		return;
 	}

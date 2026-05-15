@@ -6,19 +6,23 @@
 
 class Solver {
 	protected:
-		static double epsilon() {
+		static double epsilon()
+		{
 			return 1e-9;
 		}
 
-		static double absDouble(double value) {
+		static double absDouble(double value)
+		{
 			return value < 0.0 ? -value : value;
 		}
 
-		static long long absLong(long long value) {
+		static long long absLong(long long value)
+		{
 			return value < 0 ? -value : value;
 		}
 
-		static long long gcdLong(long long a, long long b) {
+		static long long gcdLong(long long a, long long b)
+		{
 			a = absLong(a);
 			b = absLong(b);
 			while (b != 0) {
@@ -29,7 +33,8 @@ class Solver {
 			return a == 0 ? 1 : a;
 		}
 
-		static double sqrtNewton(double value) {
+		static double sqrtNewton(double value)
+		{
 			if (value < 0.0) {
 				return 0.0;
 			}
@@ -47,7 +52,8 @@ class Solver {
 			return x;
 		}
 
-		static bool isNearInt(double value, long long &out) {
+		static bool isNearInt(double value, long long &out)
+		{
 			long long rounded = static_cast<long long>(value + (value >= 0.0 ? 0.5 : -0.5));
 			if (absDouble(value - static_cast<double>(rounded)) <= epsilon()) {
 				out = rounded;
@@ -56,13 +62,15 @@ class Solver {
 			return false;
 		}
 
-		static std::string formatDecimal(double value) {
+		static std::string formatDecimal(double value)
+		{
 			std::ostringstream out;
 			out << value;
 			return out.str();
 		}
 
-		static std::string formatFraction(long long num, long long den) {
+		static std::string formatFraction(long long num, long long den)
+		{
 			if (den < 0) {
 				num = -num;
 				den = -den;
@@ -70,32 +78,34 @@ class Solver {
 			long long div = gcdLong(num, den);
 			num /= div;
 			den /= div;
-			if (den == 1) {
+			if (den == 1)
 				return formatDecimal(static_cast<double>(num));
-			}
 			std::ostringstream out;
 			out << num << '/' << den;
 			return out.str();
 		}
 
-		static std::string formatReal(double value) {
+		static std::string formatReal(double value)
+		{
 			long long asInt = 0;
-			if (isNearInt(value, asInt)) {
+			if (isNearInt(value, asInt))
 				return formatDecimal(static_cast<double>(asInt));
-			}
 			return formatDecimal(value);
 		}
 
-		static std::string formatFractionIfPossible(double value, long long num, long long den, bool useFraction) {
-			if (useFraction) {
+		static std::string formatFractionIfPossible(double value, long long num, long long den, bool useFraction)
+		{
+			if (useFraction)
 				return formatFraction(num, den);
-			}
 			return formatReal(value);
 		}
 
-		static std::string formatImaginary(double value, long long num, long long den, bool useFraction) {
-			if (useFraction) {
-				if (den < 0) {
+		static std::string formatImaginary(double value, long long num, long long den, bool useFraction)
+		{
+			if (useFraction)
+			{
+				if (den < 0)
+				{
 					num = -num;
 					den = -den;
 				}
@@ -103,7 +113,8 @@ class Solver {
 				num /= div;
 				den /= div;
 				std::ostringstream out;
-				if (den == 1) {
+				if (den == 1)
+				{
 					out << num << 'i';
 					return out.str();
 				}
@@ -118,11 +129,11 @@ class Solver {
 
 class ConstantSolver : public Solver {
 	public:
-		static void solve(double c) {
-			if (absDouble(c) < epsilon()) {
+		static void solve(double c)
+		{
+			if (absDouble(c) < epsilon()) 
 				std::cout << "Any real number is a solution." << std::endl;
-			} else {
+			else 
 				std::cout << "No solution." << std::endl;
-			}
 		}
 };
