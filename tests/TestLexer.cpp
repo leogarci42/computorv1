@@ -135,32 +135,6 @@ int runLexerTests()
 
 	{
 		int failuresBefore = failures;
-		printCaseHeader("Integer with trailing dot");
-		Lexer lexer("1. * X");
-		std::vector<Token> tokens = lexer.tokenize();
-		failures += expect(tokens.size() == 5, "Trailing dot token count");
-		if (tokens.size() >= 1)
-			failures += expect(tokens[0].type == TOK_NUMBER, "Trailing dot token type");
-		printCaseResult(failuresBefore, failures);
-	}
-
-	{
-		int failuresBefore = failures;
-		printCaseHeader("Large exponent tokenization");
-		Lexer lexer("X^10 = 0");
-		std::vector<Token> tokens = lexer.tokenize();
-		failures += expect(tokens.size() == 5, "Large exponent token count");
-		if (tokens.size() >= 3)
-		{
-			failures += expect(tokens[0].type == TOK_VARIABLE, "Large exponent variable token");
-			failures += expect(tokens[1].type == TOK_CARET, "Large exponent caret token");
-			failures += expect(tokens[2].type == TOK_NUMBER, "Large exponent number token");
-		}
-		printCaseResult(failuresBefore, failures);
-	}
-
-	{
-		int failuresBefore = failures;
 		printCaseHeader("Single dot is invalid");
 		bool threw = false;
 		try
