@@ -66,6 +66,7 @@ re: fclean all
 
 test: $(TEST_NAME)
 	@./$(TEST_NAME)
+	@rm -f $(TEST_NAME)
 
 $(TEST_NAME): $(TEST_OBJ)
 	@echo "$(BLUE_CMD)Linking $(TEST_NAME)...$(RESET_CMD)"
