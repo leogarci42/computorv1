@@ -56,8 +56,8 @@ More valid inputs:
 
 ## Quick checks ##
 
-There are no automated tests yet. Use the command line to validate parsing and solving behavior:
-
-- Quadratic: `./computorv1 "X^2 - 12 = 0"`
-- Linear: `./computorv1 "2*X - 4 = 0"`
-- Constant: `./computorv1 "2 = 2"`
+There is tests in the /tests/ folder, to run it you simply can:
+```
+make test
+```
+it will run all the tests show their status, and tell you if any failed!
