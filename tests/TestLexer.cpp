@@ -5,7 +5,8 @@
 #include "../src/parser/Lexer.hpp"
 #include "../src/utils/Exceptions.hpp"
 
-namespace {
+namespace
+{
 	const char *kGreen = "\033[32m";
 	const char *kRed = "\033[31m";
 	const char *kBlue = "\033[34m";
@@ -36,7 +37,6 @@ namespace {
 int runLexerTests()
 {
 	int failures = 0;
-
 	{
 		int failuresBefore = failures;
 		printCaseHeader("Tokenize quadratic expression");

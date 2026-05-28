@@ -3,15 +3,16 @@
 #include <iomanip>
 #include <sstream>
 
-namespace {
+namespace
+{
 	const double kEpsilon = 1e-9;
 
 	double absDouble(double value)
-    {
+	{
 		return value < 0.0 ? -value : value;
 	}
 	std::string formatCoeff(double value)
-    {
+	{
 		if (absDouble(value) < kEpsilon)
 			return "0";
 		std::ostringstream out;
@@ -38,7 +39,7 @@ void Polynomial::addTerm(int degree, double coeff)
 void Polynomial::reduce()
 {
 	for (std::map<int, double>::iterator it = m_coeffs.begin(); it != m_coeffs.end(); )
-    {
+	{
 		if (absDouble(it->second) < kEpsilon)
 			m_coeffs.erase(it++);
 		else
@@ -69,10 +70,10 @@ std::string Polynomial::toReducedForm() const
 	std::ostringstream out;
 	bool first = true;
 	for (int degree = 0; degree <= maxDegree; ++degree)
-    {
+	{
 		double value = coeff(degree);
 		if (first)
-        {
+		{
 			out << formatCoeff(value) << " * X^" << degree;
 			first = false;
 			continue;

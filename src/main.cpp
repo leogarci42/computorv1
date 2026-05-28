@@ -24,13 +24,13 @@ void setter(std::string* str, char **av)
 int main(int ac, char **av)
 {
 	parser Parse;    
-    if (ac < 2)
-    {
-        std::string first;
-        if (std::getline(std::cin, first))
-            setter(&first, NULL);
-    }
+	if (ac < 2)
+	{
+		std::string first;
+		if (std::getline(std::cin, first))
+			setter(&first, NULL);
+	}
 	else
 		setter(NULL, av);
-    return (0);
+	return (0);
 }

@@ -6,7 +6,8 @@
 #include "../src/solver/QuadraticSolver.hpp"
 #include "../src/solver/Solver.hpp"
 
-namespace {
+namespace
+{
 	const char *kGreen = "\033[32m";
 	const char *kRed = "\033[31m";
 	const char *kBlue = "\033[34m";
