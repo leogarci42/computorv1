@@ -2,28 +2,6 @@
 
 This program solves polynomial equations up to degree 2.
 
-## What is a 2nd-degree polynomial? ##
-
-A polynomial in one variable is a sum of terms with non-negative integer powers of that variable.
-
-A 2nd-degree (quadratic) polynomial has the form:
-
-$$ax^2 + bx + c$$
-
-with $a \neq 0$. If $a = 0$, the degree drops to 1 (linear) or 0 (constant).
-
-Examples of degree-2 polynomials:
-
-- $2x^2 + 3x - 5$
-- $x^2 - 12$
-- $-4x^2$
-
-Not degree 2:
-
-- $2$ (degree 0)
-- $3x + 1$ (degree 1)
-- $2 * 1$ (just the constant 2)
-
 ## Input rules for this parser ##
 
 The parser in this project accepts a restricted grammar:
@@ -61,3 +39,6 @@ There is tests in the /tests/ folder, to run it you simply can:
 make test
 ```
 it will run all the tests show their status, and tell you if any failed!
+
+## Math ##
+[theory](/docs/theory.md)
