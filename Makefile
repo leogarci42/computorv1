@@ -7,9 +7,9 @@ BOLD_CMD   := $(shell tput bold 2>/dev/null)
 
 export RESET_CMD RED_CMD GREEN_CMD YELLOW_CMD BLUE_CMD BOLD_CMD
 
-NAME     := computorv1
+NAME     := computor
 CXX      := c++
-CXXFLAGS := -Wall -Wextra -Werror --std=c++17
+CXXFLAGS := -Wall -Wextra -Werror --std=c++11
 
 SRC      := src/main.cpp \
 			src/app/PolynomialApp.cpp \

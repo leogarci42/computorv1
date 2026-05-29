@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <rect width="100%" height="100%" fill="#11111b" rx="12"/> 
+
+  <style>
+    .title { font-family: system-ui, sans-serif; font-size: 16px; font-weight: 700; fill: #cdd6f4; letter-spacing: 1px; }
+    .subtitle { font-family: system-ui, sans-serif; font-size: 12px; fill: #bac2de; }
+    .axis-label { font-family: monospace; font-size: 12px; font-weight: bold; }
+    .tick-label { font-family: monospace; font-size: 11px; fill: #7f849c; }
+    .root-text { font-family: monospace; font-size: 13px; font-weight: bold; fill: #f38ba8; }
+    .math-text { font-family: monospace; font-size: 11px; fill: #a6adc8; }
+  </style>
+
+  <text x="30" y="40" class="title">COMPUTORV1: COMPLEX PLANE</text>
+  <text x="30" y="60" class="subtitle">Discriminant Δ &lt; 0  │  Equation: 5X² + 2X + 1 = 0</text>
+
+  <line x1="50" y1="225" x2="550" y2="225" stroke="#45475a" stroke-width="2"/>
+  <text x="560" y="229" class="axis-label" fill="#a6e3a1">Real (ℝ)</text>
+
+  <line x1="400" y1="50" x2="400" y2="400" stroke="#45475a" stroke-width="2"/>
+  <text x="400" y="35" class="axis-label" fill="#89b4fa" text-anchor="middle">Imaginary (𝕎)</text>
+
+  <circle cx="400" cy="225" r="3" fill="#45475a"/>
+  <text x="410" y="240" class="tick-label">0.0</text>
+
+  <line x1="310" y1="125" x2="310" y2="325" stroke="#f9e2af" stroke-width="1.5" stroke-dasharray="4"/>
+  <text x="310" y="245" class="tick-label" fill="#f9e2af" text-anchor="middle">-0.2</text>
+  <text x="310" y="210" class="math-text" fill="#f9e2af" text-anchor="middle">-b/2a</text>
+
+  <line x1="310" y1="125" x2="400" y2="125" stroke="#89b4fa" stroke-width="1.5" stroke-dasharray="4"/>
+  <text x="410" y="129" class="tick-label" fill="#89b4fa">+0.4i</text>
+  
+  <line x1="310" y1="325" x2="400" y2="325" stroke="#89b4fa" stroke-width="1.5" stroke-dasharray="4"/>
+  <text x="410" y="329" class="tick-label" fill="#89b4fa">-0.4i</text>
+  
+  <text x="455" y="230" class="math-text" fill="#89b4fa" text-anchor="middle">±√-Δ/2a</text>
+
+  <circle cx="310" cy="125" r="5" fill="#f38ba8"/>
+  <circle cx="310" cy="125" r="2" fill="#11111b"/>
+  <text x="290" y="129" class="root-text" text-anchor="end">X1 = -0.2 + 0.4i</text>
+
+  <circle cx="310" cy="325" r="5" fill="#f38ba8"/>
+  <circle cx="310" cy="325" r="2" fill="#11111b"/>
+  <text x="290" y="329" class="root-text" text-anchor="end">X2 = -0.2 - 0.4i</text>
+
+</svg>

@@ -64,6 +64,7 @@ Token Lexer::readNumber()
 	return token;
 }
 
+#include <iostream>
 std::vector<Token> Lexer::tokenize()
 {
 	std::vector<Token> tokens;
@@ -101,7 +102,7 @@ std::vector<Token> Lexer::tokenize()
 		else if (c == 'X' || c == 'x')
 			token.type = TOK_VARIABLE;
 		else
-			throw ParseError("Unexpected character in input.");
+                        throw ParseError("Unexpected character in input.");
 		++m_pos;
 		tokens.push_back(token);
 	}

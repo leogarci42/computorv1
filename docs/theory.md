@@ -63,7 +63,20 @@ We simplify it to aX^2 + bX + C = 0 we can obtain this equation (a != 0):
 
 And here we can simply identify multiple cases:
 
-- Δ < 0 no solution (bc a scare is always strictly positive)
+- Δ < 0 no solution (in the real root) 
+
+so we aim for complex root the equation has no solutions in the real number spectrum because you cannot take the square root of a negative number. The parabola never crosses or touches the X-axis. 
+
+Instead, we use the imaginary unit i (where i^2 = -1). We turn the negative discriminant into a positive value by using |Δ| (or -Δ) and pulling out i:
+```
+  X + b / 2a = ±√(Δ / 4a^2)
+             = ±√( -1 * |Δ| ) / 2a
+             = ±( i * √|Δ| ) / 2a
+  ```
+  So:
+  ```
+  X = (-b ± i√|Δ|) / 2a
+  ```
 - Δ == 0 got only one answer
 ```
 X = -b / 2a 
@@ -77,5 +90,9 @@ or
 ```
 X + b / 2a = -√(Δ / 4a^2) = -√Δ / 2a so X = (-b - √Δ) / 2a
 ```
+
+![Comprehensive Matrix of Quadratic Parabola Cases and Discriminants](quadratic_cases.svg)
+
+![Computorv1 Clean 2D Root Map](computor2d.svg)
 
 And that's all for this subject!

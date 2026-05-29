@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="100%" height="100%" fill="#1e1e2e" rx="12"/> 
+
+  <line x1="300" y1="60" x2="300" y2="680" stroke="#313244" stroke-width="2" />
+  <line x1="600" y1="60" x2="600" y2="680" stroke="#313244" stroke-width="2" />
+  <line x1="20" y1="360" x2="880" y2="360" stroke="#313244" stroke-width="2" />
+
+  <text x="150" y="40" fill="#cdd6f4" font-family="monospace" font-size="18" text-anchor="middle" font-weight="bold">Case 1: Δ &gt; 0</text>
+  <text x="150" y="60" fill="#a6adc8" font-family="monospace" font-size="14" text-anchor="middle">Two Distinct Real Roots</text>
+
+  <text x="450" y="40" fill="#cdd6f4" font-family="monospace" font-size="18" text-anchor="middle" font-weight="bold">Case 2: Δ = 0</text>
+  <text x="450" y="60" fill="#a6adc8" font-family="monospace" font-size="14" text-anchor="middle">One Double Real Root</text>
+
+  <text x="750" y="40" fill="#cdd6f4" font-family="monospace" font-size="18" text-anchor="middle" font-weight="bold">Case 3: Δ &lt; 0</text>
+  <text x="750" y="60" fill="#a6adc8" font-family="monospace" font-size="14" text-anchor="middle">Complex Roots (Floating)</text>
+
+  <text x="30" y="100" fill="#a6e3a1" font-family="monospace" font-size="16" font-weight="bold">a &gt; 0 (Opens Upward)</text>
+  
+  <line x1="20" y1="220" x2="880" y2="220" stroke="#a6adc8" stroke-width="2" />
+  <text x="870" y="210" fill="#a6adc8" font-family="monospace" font-size="12" text-anchor="end">X-Axis</text>
+
+  <line x1="150" y1="120" x2="150" y2="320" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+  <line x1="450" y1="120" x2="450" y2="320" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+  <line x1="750" y1="120" x2="750" y2="320" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+
+  <path d="M 70 90 Q 150 430 230 90" fill="none" stroke="#a6e3a1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="107" cy="220" r="5" fill="#f38ba8" />
+  <circle cx="193" cy="220" r="5" fill="#f38ba8" />
+  <circle cx="150" cy="260" r="4" fill="#f9e2af" />
+  <text x="150" y="280" fill="#f9e2af" font-family="monospace" font-size="12" text-anchor="middle">Vertex</text>
+
+  <path d="M 370 90 Q 450 350 530 90" fill="none" stroke="#a6e3a1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="450" cy="220" r="6" fill="#f38ba8" />
+  <text x="450" y="240" fill="#f38ba8" font-family="monospace" font-size="12" text-anchor="middle">Touchpoint</text>
+
+  <path d="M 670 90 Q 750 210 830 90" fill="none" stroke="#a6e3a1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="750" cy="150" r="4" fill="#f9e2af" />
+  <text x="750" y="170" fill="#f9e2af" font-family="monospace" font-size="12" text-anchor="middle">Vertex</text>
+  <line x1="750" y1="150" x2="750" y2="220" stroke="#f38ba8" stroke-width="2" opacity="0.7"/>
+  <text x="760" y="190" fill="#f38ba8" font-family="monospace" font-size="12">Gap</text>
+
+
+  <text x="30" y="410" fill="#89b4fa" font-family="monospace" font-size="16" font-weight="bold">a &lt; 0 (Opens Downward)</text>
+
+  <line x1="20" y1="540" x2="880" y2="540" stroke="#a6adc8" stroke-width="2" />
+  <text x="870" y="530" fill="#a6adc8" font-family="monospace" font-size="12" text-anchor="end">X-Axis</text>
+
+  <line x1="150" y1="440" x2="150" y2="650" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+  <line x1="450" y1="440" x2="450" y2="650" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+  <line x1="750" y1="440" x2="750" y2="650" stroke="#a6adc8" stroke-dasharray="5,5" opacity="0.4"/>
+
+  <path d="M 70 670 Q 150 330 230 670" fill="none" stroke="#89b4fa" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="107" cy="540" r="5" fill="#f38ba8" />
+  <circle cx="193" cy="540" r="5" fill="#f38ba8" />
+  <circle cx="150" cy="500" r="4" fill="#f9e2af" />
+  <text x="150" y="485" fill="#f9e2af" font-family="monospace" font-size="12" text-anchor="middle">Vertex</text>
+
+  <path d="M 370 670 Q 450 410 530 670" fill="none" stroke="#89b4fa" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="450" cy="540" r="6" fill="#f38ba8" />
+  <text x="450" y="520" fill="#f38ba8" font-family="monospace" font-size="12" text-anchor="middle">Touchpoint</text>
+
+  <path d="M 670 670 Q 750 550 830 670" fill="none" stroke="#89b4fa" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="750" cy="610" r="4" fill="#f9e2af" />
+  <text x="750" y="630" fill="#f9e2af" font-family="monospace" font-size="12" text-anchor="middle">Vertex</text>
+  <line x1="750" y1="540" x2="750" y2="610" stroke="#f38ba8" stroke-width="2" opacity="0.7"/>
+  <text x="760" y="580" fill="#f38ba8" font-family="monospace" font-size="12">Gap</text>
+
+</svg>
